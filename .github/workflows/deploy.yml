@@ -36,17 +36,19 @@ jobs:
         uses: actions/configure-pages@v4
         
       - name: Install dependencies
-        run: npm install
-        working-directory: ./devportfolio
+        run: |
+          cd devportfolio
+          npm install
         
       - name: Build with Astro
-        run: npm run build
-        working-directory: ./devportfolio
+        run: |
+          cd devportfolio
+          npm run build
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./devportfolio/dist
+          path: devportfolio/dist
 
   deploy:
     environment:
