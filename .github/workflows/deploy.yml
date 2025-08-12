@@ -1,0 +1,62 @@
+name: Deploy to GitHub Pages
+
+on:
+  # main 브랜치에 푸시될 때마다 배포
+  push:
+    branches: [ main ]
+  
+  # 수동으로 워크플로우 실행 가능
+  workflow_dispatch:
+
+# GitHub Pages 배포를 위한 권한 설정
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 동시 배포 방지
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: './devportfolio/package-lock.json'
+          
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v4
+        
+      - name: Install dependencies
+        run: npm install
+        working-directory: ./devportfolio
+        
+      - name: Build with Astro
+        run: npm run build
+        working-directory: ./devportfolio
+        
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./devportfolio/dist
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
