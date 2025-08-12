@@ -1,17 +1,17 @@
 export const siteConfig = {
-  name: "Ryan Fitzgerald",
-  title: "Senior Software Engineer",
-  description: "Portfolio website of Ryan Fitzgerald",
+  name: "이재현",
+  title: "",
+  description: "Portfolio website of Jaehyun Lee",
   accentColor: "#1d4ed8",
   social: {
-    email: "your-email@example.com",
+    email: "wogus3575@naver.com",
     linkedin: "https://linkedin.com/in/yourprofile",
-    twitter: "https://x.com/rfitzio",
-    github: "https://github.com/RyanFitzgerald",
+    blog: "https://yourblog.com",
+    github: "https://github.com/JaehyunLee",
   },
   aboutMe:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos asperiores nihil consequatur tempore cupiditate architecto natus commodi corrupti quas quasi facere est, dignissimos odit nam veniam sapiente ut, vitae eligendi ipsum dolor, nostrum ullam impedit! Corrupti ratione mollitia temporibus necessitatibus, consectetur reiciendis recusandae id, dolorum quaerat, vero pariatur. Ratione!",
-  skills: ["Javascript", "React", "Node.js", "Python", "AWS", "Docker"],
+    "2019년 한국공인회계사 시험 합격 이후 안경회계법인에서 일하다가 2021년 안진회계법인으로 이직하였습니다. 2023년 육군 분석평가단, 2작전사령부에서 일하다가 2026년 현재 원가분석장교, 재무제표작성장교로 복무중입니다.",
+  skills: ["Audit", "ICFR", "Valuation", "Machine Learning", "Development", "Data Analytics"],
   projects: [
     {
       name: "AI Dev Roundup Newsletter",
@@ -37,56 +37,50 @@ export const siteConfig = {
   ],
   experience: [
     {
-      company: "Tech Company",
-      title: "Senior Software Engineer",
-      dateRange: "Jan 2022 - Present",
+      company: "감사본부(대구지점)",
+      title: "안경회계법인",
+      dateRange: "2019 - 2021",
       bullets: [
-        "Led development of microservices architecture serving 1M+ users",
-        "Reduced API response times by 40% through optimization",
-        "Mentored team of 5 junior developers",
       ],
     },
     {
-      company: "Startup Inc",
-      title: "Full Stack Developer",
-      dateRange: "Jun 2020 - Dec 2021",
+      company: "감사본부(TMT,G4)",
+      title: "안진회계법인",
+      dateRange: "2021 - 2023",
       bullets: [
-        "Built and launched MVP product from scratch using React and Node.js",
-        "Implemented CI/CD pipeline reducing deployment time by 60%",
-        "Collaborated with product team to define technical requirements",
       ],
     },
     {
-      company: "Digital Agency",
-      title: "Frontend Developer",
-      dateRange: "Aug 2018 - May 2020",
+      company: "분석평가단, 2작전사령부",
+      title: "육군 재정장교",
+      dateRange: "2023 - 2026",
       bullets: [
-        "Developed responsive web applications for 20+ clients",
-        "Improved site performance scores by 35% on average",
-        "Introduced modern JavaScript frameworks to legacy codebases",
       ],
     },
   ],
   education: [
     {
-      school: "University Name",
-      degree: "Bachelor of Science in Computer Science",
-      dateRange: "2014 - 2018",
+      school: "글로벌인재학부",
+      degree: "경북대학교 학사",
+      dateRange: "2014.03 - 2020.02(졸업)",
       achievements: [
-        "Graduated Magna Cum Laude with 3.8 GPA",
-        "Dean's List all semesters",
-        "President of Computer Science Club",
+        "4년 전액 장학생",
       ],
     },
     {
-      school: "Online Platform",
-      degree: "Full Stack Development Certificate",
-      dateRange: "2019",
-      achievements: [
-        "Completed 500+ hours of coursework",
-        "Built 10+ portfolio projects",
-        "Specialized in React and Node.js",
+      school: "AI학과",
+      degree: "한국방송통신대학교 학사",
+      dateRange: "2023.09 - 2026.02(졸업)",
+      achievements: ["성적 우수장학생"
       ],
     },
+    {
+      school: "데이터사이언스 대학원",
+      degree: "경북대학교 석사",
+      dateRange: "2025.03 - 2027.02(재학)",
+      achievements: [
+        "졸업논문 : 분류모델 기반의 데이터감사"
+      ],
+    }
   ],
 };

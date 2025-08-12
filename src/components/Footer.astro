@@ -4,6 +4,7 @@ import { siteConfig } from "../config";
 const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
 const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
 const hasEducation = siteConfig.education && siteConfig.education.length > 0;
+const hasCertificate = true; // 자격증 정보가 있으므로 항상 표시
 ---
 
 <footer class="relative bg-gray-50 border-t border-gray-200">
@@ -71,10 +72,10 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
             >
           </a>
           <a
-            href={siteConfig.social.twitter}
+            href={siteConfig.social.blog}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Twitter"
+            aria-label="Blog"
             class="text-gray-600 transition-colors duration-300 hover:text-[var(--accent-color)]"
             style={`--accent-color: ${siteConfig.accentColor}`}
           >
@@ -90,8 +91,10 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
               stroke-linejoin="round"
               class="h-6 w-6"
               ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-                d="M4 4l11.733 16h4.267l-11.733 -16z"></path><path
-                d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg
+                d="M4 19a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v-12a2 2 0 0 0 -2 -2h-12a2 2 0 0 0 -2 2v12z"></path><path
+                d="M16 3v4"></path><path
+                d="M8 3v4"></path><path
+                d="M4 11h16"></path></svg
             >
           </a>
           <a
@@ -129,12 +132,22 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
             >About</a
           >
           {
-            hasProjects && (
+            hasEducation && (
               <a
-                href="#projects"
+                href="#education"
                 class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
               >
-                Projects
+                Education
+              </a>
+            )
+          }
+          {
+            hasCertificate && (
+              <a
+                href="#certificate"
+                class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
+              >
+                Certificate
               </a>
             )
           }
@@ -149,12 +162,12 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
             )
           }
           {
-            hasEducation && (
+            hasProjects && (
               <a
-                href="#education"
+                href="#projects"
                 class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
               >
-                Education
+                Projects
               </a>
             )
           }

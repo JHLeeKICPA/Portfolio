@@ -1,0 +1,104 @@
+---
+import { siteConfig } from "../config";
+const hasCertificate = true; // 자격증 정보가 있으므로 항상 표시
+---
+
+{
+  hasCertificate && (
+    <section id="certificate" class="p-8 base:p-12 md:p-16 lg:p-24">
+      <div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
+          <div class="lg:col-span-4">
+            <h2 class="text-3xl base:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900">
+              Certificate
+            </h2>
+            <div
+              class="w-[75px] h-[5px] mt-2 rounded-full"
+              style={`background-color: ${siteConfig.accentColor}`}
+            />
+          </div>
+
+          <div class="lg:col-span-8">
+            <div class="bg-white rounded-lg shadow-base border border-gray-100 overflow-hidden">
+              <div class="overflow-x-auto">
+                <table class="w-full">
+                  <thead>
+                    <tr class="bg-gray-50 border-b border-gray-200">
+                      <th class="px-4 py-3 text-center text-lg font-semibold text-gray-700">분류</th>
+                      <th class="px-4 py-3 text-center text-lg font-semibold text-gray-700">자격명</th>
+                      <th class="px-4 py-3 text-center text-lg font-semibold text-gray-700">시행/주관</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-gray-200">
+                    <!-- 전문자격 -->
+                    <tr class="hover:bg-gray-50 transition-colors">
+                      <td class="px-4 py-3 text-center text-base font-medium text-gray-900">전문자격</td>
+                      <td class="px-4 py-3 text-center text-base text-gray-700">한국공인회계사</td>
+                      <td class="px-4 py-3 text-center text-base text-gray-600">금융감독원</td>
+                    </tr>
+                    
+                    <!-- IT -->
+                    <tr class="hover:bg-gray-50 transition-colors">
+                      <td class="px-4 py-3 text-center text-base font-medium text-gray-900">IT</td>
+                      <td class="px-4 py-3 text-center text-base text-gray-700">CISA</td>
+                      <td class="px-4 py-3 text-center text-base text-gray-600">ISACA</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 transition-colors">
+                      <td class="px-4 py-3 text-center text-base font-medium text-gray-900"></td>
+                      <td class="px-4 py-3 text-center text-base text-gray-700">정보처리기사</td>
+                      <td class="px-4 py-3 text-center text-base text-gray-600">한국산업인력공단</td>
+                    </tr>
+                    
+                    <!-- Data -->
+                    <tr class="hover:bg-gray-50 transition-colors">
+                      <td class="px-4 py-3 text-center text-base font-medium text-gray-900">Data</td>
+                      <td class="px-4 py-3 text-center text-base text-gray-700">빅데이터분석기사</td>
+                      <td class="px-4 py-3 text-center text-base text-gray-600">한국데이터산업진흥원</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 transition-colors">
+                      <td class="px-4 py-3 text-center text-base font-medium text-gray-900"></td>
+                      <td class="px-4 py-3 text-center text-base text-gray-700">ADsP</td>
+                      <td class="px-4 py-3 text-center text-base text-gray-600">한국데이터산업진흥원</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 transition-colors">
+                      <td class="px-4 py-3 text-center text-base font-medium text-gray-900"></td>
+                      <td class="px-4 py-3 text-center text-base text-gray-700">SQLD</td>
+                      <td class="px-4 py-3 text-center text-base text-gray-600">한국데이터산업진흥원</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 transition-colors">
+                      <td class="px-4 py-3 text-center text-base font-medium text-gray-900"></td>
+                      <td class="px-4 py-3 text-center text-base text-gray-700">재무빅데이터분석사 2급</td>
+                      <td class="px-4 py-3 text-center text-base text-gray-600">한국공인회계사회</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 transition-colors">
+                      <td class="px-4 py-3 text-center text-base font-medium text-gray-900"></td>
+                      <td class="px-4 py-3 text-center text-base text-gray-700">재무빅데이터분석사 1급 </td>
+                      <td class="px-4 py-3 text-center text-base text-gray-600">한국공인회계사회</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 transition-colors">
+                      <td class="px-4 py-3 text-center text-base font-medium text-gray-900"></td>
+                      <td class="px-4 py-3 text-center text-base text-gray-700">DAsP</td>
+                      <td class="px-4 py-3 text-center text-base text-gray-600">한국데이터산업진흥원</td>
+                    </tr>
+                    
+                    <!-- 원가 -->
+                    <tr class="hover:bg-gray-50 transition-colors">
+                      <td class="px-4 py-3 text-center text-base font-medium text-gray-900">원가</td>
+                      <td class="px-4 py-3 text-center text-base text-gray-700">원가분석사</td>
+                      <td class="px-4 py-3 text-center text-base text-gray-600">한국원가관리협회</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 transition-colors">
+                      <td class="px-4 py-3 text-center text-base font-medium text-gray-900"></td>
+                      <td class="px-4 py-3 text-center text-base text-gray-700">국방원가관리사</td>
+                      <td class="px-4 py-3 text-center text-base text-gray-600">방위산업진흥회</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
