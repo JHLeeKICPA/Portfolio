@@ -19,81 +19,79 @@ const hasCertificate = true; // 자격증 정보가 있으므로 항상 표시
           </div>
 
           <div class="lg:col-span-8">
-            <div class="bg-white rounded-lg shadow-base border border-gray-100 overflow-hidden">
-              <div class="overflow-x-auto">
-                <table class="w-full">
-                  <thead>
-                    <tr class="bg-gray-50 border-b border-gray-200">
-                      <th class="px-4 py-3 text-center text-lg font-semibold text-gray-700">분류</th>
-                      <th class="px-4 py-3 text-center text-lg font-semibold text-gray-700">자격명</th>
-                      <th class="px-4 py-3 text-center text-lg font-semibold text-gray-700">시행/주관</th>
-                    </tr>
-                  </thead>
-                  <tbody class="divide-y divide-gray-200">
-                    <!-- 전문자격 -->
-                    <tr class="hover:bg-gray-50 transition-colors">
-                      <td class="px-4 py-3 text-center text-base font-medium text-gray-900">전문자격</td>
-                      <td class="px-4 py-3 text-center text-base text-gray-700">한국공인회계사</td>
-                      <td class="px-4 py-3 text-center text-base text-gray-600">금융감독원</td>
-                    </tr>
-                    
-                    <!-- IT -->
-                    <tr class="hover:bg-gray-50 transition-colors">
-                      <td class="px-4 py-3 text-center text-base font-medium text-gray-900">IT</td>
-                      <td class="px-4 py-3 text-center text-base text-gray-700">CISA</td>
-                      <td class="px-4 py-3 text-center text-base text-gray-600">ISACA</td>
-                    </tr>
-                    <tr class="hover:bg-gray-50 transition-colors">
-                      <td class="px-4 py-3 text-center text-base font-medium text-gray-900"></td>
-                      <td class="px-4 py-3 text-center text-base text-gray-700">정보처리기사</td>
-                      <td class="px-4 py-3 text-center text-base text-gray-600">한국산업인력공단</td>
-                    </tr>
-                    
-                    <!-- Data -->
-                    <tr class="hover:bg-gray-50 transition-colors">
-                      <td class="px-4 py-3 text-center text-base font-medium text-gray-900">Data</td>
-                      <td class="px-4 py-3 text-center text-base text-gray-700">빅데이터분석기사</td>
-                      <td class="px-4 py-3 text-center text-base text-gray-600">한국데이터산업진흥원</td>
-                    </tr>
-                    <tr class="hover:bg-gray-50 transition-colors">
-                      <td class="px-4 py-3 text-center text-base font-medium text-gray-900"></td>
-                      <td class="px-4 py-3 text-center text-base text-gray-700">ADsP</td>
-                      <td class="px-4 py-3 text-center text-base text-gray-600">한국데이터산업진흥원</td>
-                    </tr>
-                    <tr class="hover:bg-gray-50 transition-colors">
-                      <td class="px-4 py-3 text-center text-base font-medium text-gray-900"></td>
-                      <td class="px-4 py-3 text-center text-base text-gray-700">SQLD</td>
-                      <td class="px-4 py-3 text-center text-base text-gray-600">한국데이터산업진흥원</td>
-                    </tr>
-                    <tr class="hover:bg-gray-50 transition-colors">
-                      <td class="px-4 py-3 text-center text-base font-medium text-gray-900"></td>
-                      <td class="px-4 py-3 text-center text-base text-gray-700">재무빅데이터분석사 2급</td>
-                      <td class="px-4 py-3 text-center text-base text-gray-600">한국공인회계사회</td>
-                    </tr>
-                    <tr class="hover:bg-gray-50 transition-colors">
-                      <td class="px-4 py-3 text-center text-base font-medium text-gray-900"></td>
-                      <td class="px-4 py-3 text-center text-base text-gray-700">재무빅데이터분석사 1급 </td>
-                      <td class="px-4 py-3 text-center text-base text-gray-600">한국공인회계사회</td>
-                    </tr>
-                    <tr class="hover:bg-gray-50 transition-colors">
-                      <td class="px-4 py-3 text-center text-base font-medium text-gray-900"></td>
-                      <td class="px-4 py-3 text-center text-base text-gray-700">DAsP</td>
-                      <td class="px-4 py-3 text-center text-base text-gray-600">한국데이터산업진흥원</td>
-                    </tr>
-                    
-                    <!-- 원가 -->
-                    <tr class="hover:bg-gray-50 transition-colors">
-                      <td class="px-4 py-3 text-center text-base font-medium text-gray-900">원가</td>
-                      <td class="px-4 py-3 text-center text-base text-gray-700">원가분석사</td>
-                      <td class="px-4 py-3 text-center text-base text-gray-600">한국원가관리협회</td>
-                    </tr>
-                    <tr class="hover:bg-gray-50 transition-colors">
-                      <td class="px-4 py-3 text-center text-base font-medium text-gray-900"></td>
-                      <td class="px-4 py-3 text-center text-base text-gray-700">국방원가관리사</td>
-                      <td class="px-4 py-3 text-center text-base text-gray-600">방위산업진흥회</td>
-                    </tr>
-                  </tbody>
-                </table>
+            <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-4 sm:p-5 md:p-6 hover:shadow-md transition-shadow duration-300">
+              <div class="space-y-8">
+                <!-- 전문자격 -->
+                <div>
+                  <h3 class="text-lg sm:text-xl font-semibold text-gray-900">전문자격</h3>
+                  <dl class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-x-8">
+                    <div class="py-2 flex items-baseline justify-between md:justify-start md:gap-8">
+                      <dt class="text-sm md:text-base font-medium text-gray-900">한국공인회계사</dt>
+                      <dd class="text-xs md:text-sm text-gray-500">금융감독원</dd>
+                    </div>
+                  </dl>
+                </div>
+
+                <!-- IT -->
+                <div class="border-t border-gray-100 pt-6">
+                  <h3 class="text-lg sm:text-xl font-semibold text-gray-900">IT</h3>
+                  <dl class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-x-8">
+                    <div class="py-2 flex items-baseline justify-between md:justify-start md:gap-8">
+                      <dt class="text-sm md:text-base font-medium text-gray-900">CISA</dt>
+                      <dd class="text-xs md:text-sm text-gray-500">ISACA</dd>
+                    </div>
+                    <div class="py-2 flex items-baseline justify-between md:justify-start md:gap-8">
+                      <dt class="text-sm md:text-base font-medium text-gray-900">정보처리기사</dt>
+                      <dd class="text-xs md:text-sm text-gray-500">한국산업인력공단</dd>
+                    </div>
+                  </dl>
+                </div>
+
+                <!-- Data -->
+                <div class="border-t border-gray-100 pt-6">
+                  <h3 class="text-lg sm:text-xl font-semibold text-gray-900">Data</h3>
+                  <dl class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-x-8">
+                    <div class="py-2 flex items-baseline justify-between md:justify-start md:gap-8">
+                      <dt class="text-sm md:text-base font-medium text-gray-900">빅데이터분석기사</dt>
+                      <dd class="text-xs md:text-sm text-gray-500">한국데이터산업진흥원</dd>
+                    </div>
+                    <div class="py-2 flex items-baseline justify-between md:justify-start md:gap-8">
+                      <dt class="text-sm md:text-base font-medium text-gray-900">ADsP</dt>
+                      <dd class="text-xs md:text-sm text-gray-500">한국데이터산업진흥원</dd>
+                    </div>
+                    <div class="py-2 flex items-baseline justify-between md:justify-start md:gap-8">
+                      <dt class="text-sm md:text-base font-medium text-gray-900">SQLD</dt>
+                      <dd class="text-xs md:text-sm text-gray-500">한국데이터산업진흥원</dd>
+                    </div>
+                    <div class="py-2 flex items-baseline justify-between md:justify-start md:gap-8">
+                      <dt class="text-sm md:text-base font-medium text-gray-900">재무빅데이터분석사 2급</dt>
+                      <dd class="text-xs md:text-sm text-gray-500">한국공인회계사회</dd>
+                    </div>
+                    <div class="py-2 flex items-baseline justify-between md:justify-start md:gap-8">
+                      <dt class="text-sm md:text-base font-medium text-gray-900">재무빅데이터분석사 1급</dt>
+                      <dd class="text-xs md:text-sm text-gray-500">한국공인회계사회</dd>
+                    </div>
+                    <div class="py-2 flex items-baseline justify-between md:justify-start md:gap-8">
+                      <dt class="text-sm md:text-base font-medium text-gray-900">DAsP</dt>
+                      <dd class="text-xs md:text-sm text-gray-500">한국데이터산업진흥원</dd>
+                    </div>
+                  </dl>
+                </div>
+
+                <!-- 원가 -->
+                <div class="border-t border-gray-100 pt-6">
+                  <h3 class="text-lg sm:text-xl font-semibold text-gray-900">원가</h3>
+                  <dl class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-x-8">
+                    <div class="py-2 flex items-baseline justify-between md:justify-start md:gap-8">
+                      <dt class="text-sm md:text-base font-medium text-gray-900">원가분석사</dt>
+                      <dd class="text-xs md:text-sm text-gray-500">한국원가관리협회</dd>
+                    </div>
+                    <div class="py-2 flex items-baseline justify-between md:justify-start md:gap-8">
+                      <dt class="text-sm md:text-base font-medium text-gray-900">국방원가관리사</dt>
+                      <dd class="text-xs md:text-sm text-gray-500">방위산업진흥회</dd>
+                    </div>
+                  </dl>
+                </div>
               </div>
             </div>
           </div>

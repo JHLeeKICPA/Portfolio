@@ -5,6 +5,7 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
 const hasCareer = siteConfig.experience && siteConfig.experience.length > 0;
 const hasEducation = siteConfig.education && siteConfig.education.length > 0;
 const hasCertificate = true; // 자격증 정보가 있으므로 항상 표시
+const hasWorkExperience = siteConfig.workExperience && siteConfig.workExperience.length > 0;
 ---
 
 <header
@@ -33,6 +34,30 @@ const hasCertificate = true; // 자격증 정보가 있으므로 항상 표시
             </li>
           )
         }
+               {
+          hasCareer && (
+            <li>
+              <a
+                href="#career"
+                class="text-gray-700 hover:text-black transition-colors font-medium text-xl"
+              >
+                Career
+              </a>
+            </li>
+          )
+        }
+        {
+          hasWorkExperience && (
+            <li>
+              <a
+                href="#work-experience"
+                class="text-gray-700 hover:text-black transition-colors font-medium text-xl"
+              >
+                Work Experience
+              </a>
+            </li>
+          )
+        }
         {
           hasCertificate && (
             <li>
@@ -41,18 +66,6 @@ const hasCertificate = true; // 자격증 정보가 있으므로 항상 표시
                 class="text-gray-700 hover:text-black transition-colors font-medium text-xl"
               >
                 Certificate
-              </a>
-            </li>
-          )
-        }
-               {
-          hasCareer && (
-            <li>
-              <a
-                href="#experience"
-                class="text-gray-700 hover:text-black transition-colors font-medium text-xl"
-              >
-                Career
               </a>
             </li>
           )

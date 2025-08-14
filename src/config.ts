@@ -7,14 +7,14 @@ export const siteConfig = {
     email: "wogus3575@naver.com",
     linkedin: "https://linkedin.com/in/yourprofile",
     blog: "https://yourblog.com",
-    github: "https://github.com/JaehyunLee",
+    github: "https://github.com/JaheyunLee",
   },
   aboutMe:
-    "2019년 한국공인회계사 시험 합격 이후 안경회계법인에서 일하다가 2021년 안진회계법인으로 이직하였습니다. 2023년 육군 분석평가단, 2작전사령부에서 일하다가 2026년 현재 원가분석장교, 재무제표작성장교로 복무중입니다.",
-  skills: ["Audit", "ICFR", "Valuation", "Machine Learning", "Development", "Data Analytics"],
+    "한국공인회계사로서 회계감사, 내부회계, 가치평가, 연결PA, 원가분석, 국가회계 등 다양한 업무를 수행하였습니다. \n또한 생산성과 AI에 관심이 많으며 관련하여 IT, 데이터사이언스 분야에 대해 꾸준히 공부하고 있습니다.\n저는 언제나 더 나은 방법을 찾는 사람이며, 수동적 반복 보다는 능동적 탐색으로 새로운 가치를 제시하는 전문가를 목표로 합니다.",
+  skills: ["KICPA", "AI", "Productivity", "IT", "Data Science"],
   projects: [
     {
-      name: "AI Dev Roundup Newsletter",
+      name: "회계감사",
       description:
         "One concise email. Five minutes. Every Tuesday. Essential AI news & trends, production-ready libraries, powerful AI tools, and real-world code examples",
       link: "https://aidevroundup.com/?ref=devportfolio",
@@ -37,50 +37,113 @@ export const siteConfig = {
   ],
   experience: [
     {
-      company: "감사본부(대구지점)",
+      company: "Audit&Assurance",
       title: "안경회계법인",
-      dateRange: "2019 - 2021",
+      dateRange: "2019 ~ 2021",
       bullets: [
       ],
     },
     {
-      company: "감사본부(TMT,G4)",
+      company: "Audit&Assurance",
       title: "안진회계법인",
-      dateRange: "2021 - 2023",
+      dateRange: "2021 ~ 2023",
       bullets: [
       ],
     },
     {
       company: "분석평가단, 2작전사령부",
       title: "육군 재정장교",
-      dateRange: "2023 - 2026",
+      dateRange: "2023 ~ 2026 (現)",
       bullets: [
       ],
     },
+    {
+      company: "원가관리 자문위원",
+      title: "방위사업청",
+      dateRange: "2025 ~ 2027 (現)",
+      bullets: [
+      ],
+    }
   ],
   education: [
-    {
-      school: "글로벌인재학부",
-      degree: "경북대학교 학사",
-      dateRange: "2014.03 - 2020.02(졸업)",
+    { 
+      degree: "경북대학교 글로벌인재학부",
+      dateRange: "2014 ~ 2019",
       achievements: [
         "4년 전액 장학생",
       ],
     },
     {
-      school: "AI학과",
-      degree: "한국방송통신대학교 학사",
-      dateRange: "2023.09 - 2026.02(졸업)",
-      achievements: ["성적 우수장학생"
+      degree: "한국방송통신대학교 AI학과",
+      dateRange: "2023 ~ 2025",
+      achievements: [
       ],
     },
     {
-      school: "데이터사이언스 대학원",
-      degree: "경북대학교 석사",
-      dateRange: "2025.03 - 2027.02(재학)",
+      degree: "경북대학교 데이터사이언스 대학원",
+      dateRange: "2025 ~ 2026 (現)",
       achievements: [
-        "졸업논문 : 분류모델 기반의 데이터감사"
+        "졸업논문 : 분류모델 기반의 데이터감사(예정)"
       ],
+    }
+  ],
+  workExperience: [
+    {
+      category: "회계감사",
+      description: "상장사 및 비상장사 회계감사 업무",
+      items: [
+        {
+          role: "In-Charge",
+          clients: ["㈜LX홀딩스", "두산큐벡스㈜", "버슘머트리얼즈코리아㈜ 및 계열사", "기타"]
+        },
+        {
+          role: "Staff",
+          clients: ["㈜LG", "㈜LG씨엔에스", "㈜트리노테크놀로지", "㈜대유에이텍", "기타"]
+        }
+      ]
+    },
+    {
+      category: "내부회계",
+      description: "내부회계관리제도 구축 및 고도화",
+      items: [
+        {
+          role: "In-Charge",
+          clients: ["㈜DH오토웨어", "사조동아원㈜", "㈜SK E&S(연결프로세스)", "기타"]
+        },
+        {
+          role: "Staff",
+          clients: ["㈜시너지이노베이션", "㈜나스미디어", "㈜플레이디", "기타"]
+        }
+      ]
+    },
+    {
+      category: "평가, PA",
+      description: "기업가치평가, 연결 PA, Conversion",
+      items: [
+        {
+          role: "재무보고 목적 공정가치 평가 및 손상검사",
+          clients: ["㈜SBS", "㈜라인게임즈", "밸류그로스㈜", "㈜오피스디포코리아", "기타"],
+          note: "안진회계법인 감사본부 Valuation Specialist 팀 2년 경력"
+        },
+        {
+          role: "연결 PA, Conversion",
+          clients: ["㈜홈센타홀딩스", "㈜보광산업"],
+        }
+      ]
+    },
+    {
+      category: "원가분석",
+      description: "원가 및 비용 분석 보고서 작성",
+      items: [
+        {
+          role: "방산물자 원가 분석",
+          clients: ["KAI", "한화에어로스페이스", "한화시스템", "현대로템", "풍산"]
+        },
+        {
+          role: "정책 보고서 작성",
+          clients: ["육군 계급체계 다단계/정년연장에 따른 비용 추계분석", "대구시 군부대 이전에 따른 기부대양여 자산 적정가치 평가", "소형무장헬기(LAH) 창정비 방안 분석"]
+        }
+      ]
     }
   ],
 };
