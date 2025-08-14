@@ -14,25 +14,25 @@ export const siteConfig = {
   skills: ["KICPA", "AI", "Productivity", "IT", "Data Science"],
   projects: [
     {
-      name: "회계감사",
+      name: "Langchain을 활용한 회계기준서 RAG 프로젝트",
       description:
-        "One concise email. Five minutes. Every Tuesday. Essential AI news & trends, production-ready libraries, powerful AI tools, and real-world code examples",
+        "Langchain을 활용하여 회계기준, 질의회신, 실무사례 등을 학습하여 RAG 기반의 AI agent 구축",
       link: "https://aidevroundup.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+      skills: ["Langchain", "Python", "RAG"],
     },
     {
-      name: "Chrome Extension Mastery: Build Full-Stack Extensions with React & Node.js",
+      name: "Obsidian 활용 디지털가든 구축 프로젝트",
       description:
-        "Master the art of building production-ready, full-stack Chrome Extensions using modern web technologies and best practices",
+        "Obsidian으로 세컨드브레인을 구축한 후 이를 웹에 배포하여 디지털가든 구축",
       link: "https://fullstackextensions.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+      skills: ["Obsidian", "Backend", "AWS"],
     },
     {
-      name: "ExtensionKit",
+      name: "n8n을 활용한 업무자동화 프로젝트",
       description:
-        "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates & examples",
+        "n8n을 활용하여 업무에 적용할 수 있는 다양한 자동화 프로젝트 수행",
       link: "https://extensionkit.io/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+      skills: ["n8n", "Python", "AWS"],
     },
   ],
   experience: [
