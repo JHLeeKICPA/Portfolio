@@ -10,7 +10,7 @@ export const siteConfig = {
     github: "https://github.com/JaheyunLee",
   },
   aboutMe:
-    "한국공인회계사로서 회계감사, 내부회계, 가치평가, 연결PA, 원가분석, 국가회계 등 다양한 업무를 수행하였습니다. \n또한 생산성과 AI에 관심이 많으며 관련하여 IT, 데이터사이언스 분야에 대해 꾸준히 공부하고 있습니다.\n저는 언제나 더 나은 방법을 찾는 사람이며, 수동적 반복 보다는 능동적 탐색으로 새로운 가치를 제시하는 전문가를 목표로 합니다.",
+    "한국공인회계사로서 회계감사, 내부회계, 가치평가, 연결PA, 원가분석, 국가회계 등 다양한 업무를 수행하였습니다. \n또한 생산성과 AI에 관심이 많으며 관련하여 IT, 데이터사이언스 분야에 대해 꾸준히 공부하고 있습니다.\n저는 언제나 더 나은 방법을 찾는 사람이며, 수동적 반복 보다는 능동적 탐색으로 새로운 가치를 제시하는 전문가가 되고자 합니다.",
   skills: ["KICPA", "AI", "Productivity", "IT", "Data Science"],
   projects: [
     {
@@ -98,7 +98,7 @@ export const siteConfig = {
         },
         {
           role: "Staff",
-          clients: ["㈜LG", "㈜LG씨엔에스", "㈜트리노테크놀로지", "㈜대유에이텍", "기타"]
+          clients: ["㈜LG", "㈜LG씨엔에스", "㈜대유에이텍", "기타"]
         }
       ]
     },
@@ -123,7 +123,7 @@ export const siteConfig = {
         {
           role: "재무보고 목적 공정가치 평가 및 손상검사",
           clients: ["㈜SBS", "㈜라인게임즈", "밸류그로스㈜", "㈜오피스디포코리아", "기타"],
-          note: "안진회계법인 감사본부 Valuation Specialist 팀 2년 경력"
+          note: " * 안진회계법인 감사본부 Valuation Specialist 팀 2년 경력"
         },
         {
           role: "연결 PA, Conversion",
