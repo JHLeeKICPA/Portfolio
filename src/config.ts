@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "이재현",
   title: "",
   description: "Portfolio website of Jaehyun Lee",
-  accentColor: "#1d4ed8",
+  accentColor: "#16a34a",
   social: {
     email: "wogus3575@naver.com",
     linkedin: "https://linkedin.com/in/yourprofile",
@@ -10,8 +10,8 @@ export const siteConfig = {
     github: "https://github.com/JaheyunLee",
   },
   aboutMe:
-    "한국공인회계사로서 회계감사, 내부회계, 가치평가, 연결PA, 원가분석, 국가회계 등 다양한 업무를 수행하였습니다. \n또한 생산성과 AI에 관심이 많으며 관련하여 IT, 데이터사이언스 분야에 대해 꾸준히 공부하고 있습니다.\n저는 언제나 더 나은 방법을 찾는 사람이며, 수동적 반복 보다는 능동적 탐색으로 새로운 가치를 제시하는 전문가가 되고자 합니다.",
-  skills: ["KICPA", "AI", "Productivity", "IT", "Data Science"],
+    "한국공인회계사로서 회계감사, 내부회계, 가치평가, PA용역 등 다양한 업무를 수행하였습니다. \n또한 생산성과 AI에 관심이 많으며 관련하여 IT, 데이터사이언스 분야에 대해 꾸준히 공부하고 있습니다.\n저는 언제나 더 나은 방법을 찾는 사람이며, 수동적 반복 보다는 능동적 탐색으로 새로운 가치를 제시하는 전문가가 되고자 합니다.",
+  skills: ["Audit", "ICFR", "Valuation", "AI", "Productivity", "IT", "Data Science"],
   projects: [
     {
       name: "Langchain을 활용한 회계기준서 RAG 프로젝트",
