@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "이재현",
   title: "",
   description: "Portfolio website of Jaehyun Lee",
-  accentColor: "#16a34a",
+  accentColor: "#1d4ed8",
   social: {
     email: "wogus3575@naver.com",
     linkedin: "https://linkedin.com/in/yourprofile",
@@ -14,23 +14,16 @@ export const siteConfig = {
   skills: ["Audit", "ICFR", "Valuation", "AI", "Productivity", "IT", "Data Science"],
   projects: [
     {
-      name: "Langchain을 활용한 회계기준서 RAG 프로젝트",
+      name: "회계기준서 질의답변 AI agent 구축(진행 중)",
       description:
-        "Langchain을 활용하여 회계기준, 질의회신, 실무사례 등을 학습하여 RAG 기반의 AI agent 구축",
+        "Langchain, 옵시디언(markdown) 기반으로 회계기준, 질의회신, 실무사례 등을 학습하여 RAG 기반의 AI agent 구축",
       link: "https://aidevroundup.com/?ref=devportfolio",
-      skills: ["Langchain", "Python", "RAG"],
-    },
-    {
-      name: "Obsidian 활용 디지털가든 구축 프로젝트",
-      description:
-        "Obsidian으로 세컨드브레인을 구축한 후 이를 웹에 배포하여 디지털가든 구축",
-      link: "https://fullstackextensions.com/?ref=devportfolio",
-      skills: ["Obsidian", "Backend", "AWS"],
+      skills: ["Langchain", "Python", "RAG", "AI agent"],
     },
     {
       name: "n8n을 활용한 업무자동화 프로젝트",
       description:
-        "n8n을 활용하여 업무에 적용할 수 있는 다양한 자동화 프로젝트 수행",
+        "n8n을 활용하여 업무에 적용할 수 있는 다양한 자동화 프로젝트 수행(진행 중)",
       link: "https://extensionkit.io/?ref=devportfolio",
       skills: ["n8n", "Python", "AWS"],
     },
