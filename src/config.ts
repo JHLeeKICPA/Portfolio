@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "이재현",
   title: "",
   description: "Portfolio website of Jaehyun Lee",
-  accentColor: "#1d4ed8",
+  accentColor: "#1e40af",
   social: {
     email: "wogus3575@naver.com",
     linkedin: "https://linkedin.com/in/yourprofile",
