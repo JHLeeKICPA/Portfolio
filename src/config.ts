@@ -120,7 +120,7 @@ export const siteConfig = {
         },
         {
           role: "연결 PA, Conversion",
-          clients: ["㈜홈센타홀딩스", "㈜보광산업"],
+          clients: ["㈜SK E&S", "㈜홈센타홀딩스", "㈜보광산업"],
         }
       ]
     },
