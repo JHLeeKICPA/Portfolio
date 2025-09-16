@@ -5,8 +5,7 @@ export const siteConfig = {
   accentColor: "#1d4ed8",
   social: {
     email: "wogus3575@naver.com",
-    linkedin: "https://linkedin.com/in/yourprofile",
-    blog: "https://yourblog.com",
+    blog: "https://blog.naver.com/wogus3575",
     github: "https://github.com/JaheyunLee",
   },
   aboutMe:
