@@ -20,9 +20,9 @@ export const siteConfig = {
       skills: ["Langchain", "Python", "RAG", "AI agent"],
     },
     {
-      name: "n8n을 활용한 업무자동화 프로젝트",
+      name: "n8n, opal을 활용한 업무자동화 프로젝트(진행 중)",
       description:
-        "n8n을 활용하여 업무에 적용할 수 있는 다양한 자동화 프로젝트 수행(진행 중)",
+        "n8n, opal 등을 활용하여 기업의 지원부서 업무에 적용할 수 있는 다양한 자동화 프로젝트 수행",
       link: "https://extensionkit.io/?ref=devportfolio",
       skills: ["n8n", "Python", "AWS"],
     },
